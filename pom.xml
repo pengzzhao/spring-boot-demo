@@ -6,7 +6,19 @@
 	<groupId>com.imooc</groupId>
 	<artifactId>first-app-demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+    <!-- 修改成pom -->
+	<packaging>pom</packaging>
+
+	<!--
+	 	模型层：model
+	 	持久层：persistence
+	 	表示层：web
+	 -->
+    <modules>
+        <module>web</module>
+		<module>model</module>
+		<module>persistence</module>
+	</modules>
 
 	<name>first-app-demo</name>
 	<description>Demo project for Spring Boot</description>
